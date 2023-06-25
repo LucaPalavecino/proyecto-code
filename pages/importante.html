@@ -5,25 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Calori</title>
+    <!------ Google Fonts  ------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
+    <!------ From Awesome  ------>
+    <script src="https://kit.fontawesome.com/3b7ea41c2f.js" crossorigin="anonymous"></script>
+    <script defer src="../js/index.js"></script>
 </head>
 
 <body>
     <header>
 
-        <div>
-            <img src="../imagenes/CALORI3.png" alt="">
-            <h1><a href="../index.html">Calori</a></h1>
-        </div>
+        <nav class="nav">
 
-        <nav>
-            <ul>
-                <li><a href="./acerca-de.html">Acerca de </a></li>
-                <li><a href="./productos-y-servicios.html">Productos y servicios</a></li>
-                <li><a href="./encendido-y-uso.html">Encendido y uso</a></li>
-                <li><a href="./contactos.html">Contactos</a></li>
-                <li><a href="./importante.html">Importante</a></li>
+            <a href="../index.html"><img class="logo" src="../imagenes/logo.jpg" alt="logo"></a>
+
+            <button class="nav-toggle">
+                <i class="fa-solid fa-bars fa-lg"></i>
+            </button>
+
+            <ul class="nav-list">
+                <li><a class="nav-list-link" href="./acerca-de.html">Acerca de </a></li>
+                <li><a class="nav-list-link" href="./productos-y-servicios.html">productos y servicios</a></li>
+                <li><a class="nav-list-link" href="./encendido-y-uso.html">Encendido y uso</a></li>
+                <li><a class="nav-list-link" href="./contactos.html">Contactos</a></li>
+                <li><a class="nav-list-link" href="./importante.html">Importante</a></li>
             </ul>
         </nav>
 
