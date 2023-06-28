@@ -26,8 +26,8 @@ h4 {
 body {
     background-color: black;
     color: #fff;
-    
-    
+
+
 }
 
 
@@ -58,7 +58,7 @@ header {
     justify-content: space-between;
     max-width: 1024px;
     margin: 0 auto;
-    
+
 
 }
 
@@ -70,7 +70,7 @@ header {
 
 }
 
-.nav-list-link{
+.nav-list-link {
     padding: 6px 10px;
     border-radius: 5px;
 }
@@ -80,7 +80,7 @@ header {
     transition: 0.5s;
 }
 
-.nav-toggle{
+.nav-toggle {
     color: #fff;
     background: none;
     border: none;
@@ -91,72 +91,72 @@ header {
     display: none;
 }
 
-@media  (max-width: 992px) {
+@media (max-width: 992px) {
 
     header {
         background-color: black;
         color: white;
         padding: 1em;
         font-size: small;
-}
+    }
 
-.nav-toggle{
-    display:block; 
-}
+    .nav-toggle {
+        display: block;
+    }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
 
-}
+    }
 
-.nav-list {
-    flex-direction: column;
-    align-items: center;
-    margin:0%;
-    width: max-content;
-    font-size: 14px;
-    background-color: rgb(115, 115, 115);
-    position: fixed;
-    left: 100%;
-    transition: left 0.5s;
-    top: 150px;
-    width: 100%;
-    padding: 20px 0;
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        margin: 0%;
+        width: max-content;
+        font-size: 14px;
+        background-color: rgb(115, 115, 115);
+        position: fixed;
+        left: 100%;
+        transition: left 0.5s;
+        top: 150px;
+        width: 100%;
+        padding: 20px 0;
 
-    height: calc(100% - 150px);
-    overflow-y: auto ;
+        height: calc(100% - 150px);
+        overflow-y: auto;
 
-}
+    }
 
-.nav-list-link{
-    padding: 6px 10px;
-    border-radius: 5px;
-}
+    .nav-list-link {
+        padding: 6px 10px;
+        border-radius: 5px;
+    }
 
-.nav-list-link:hover {
-    background-color: rgb(52, 52, 52);
-    transition: 0.5s;
-}
+    .nav-list-link:hover {
+        background-color: rgb(52, 52, 52);
+        transition: 0.5s;
+    }
 
-.nav-list_visible{
-    left: 0;
-}
+    .nav-list_visible {
+        left: 0;
+    }
 }
 
 
 main {
     background-color: rgb(0, 0, 0);
     color: #fff;
-    
+
 
 }
 
 section {
-    
-    
+
+
     background-color: rgb(0, 0, 0);
 
 }
@@ -200,6 +200,7 @@ div h3 {
 
 /* footer */
 footer {
+    margin-top: 300px;
     background-color: black;
     justify-content: center;
     display: flex;
@@ -220,56 +221,60 @@ ul {
 }
 
 
-/*  */
 
 
 
 
-
+/* ---imagen de fondo--- */
 
 .container-titulo {
-    width: 50rem;
-    
+
+    height: 20vh;
+    background-color: #5d5d5d;
+    background-image: url("../imagenes/img.1.0.jpg");
+
+
 }
 
-.titulo {
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2rem;
-}
+.titulo {}
 
+/* ------Pagina INDEX------- */
 
-
-.seccion {
-    background-color: black;
-    height: 1050px;
+.seccion-intro{
     width: 700px;
-    margin-top: 30px;
-    margin-left: 400px;
-    text-align: left;
-    position: relative;
+    height: 300px;
+
+    display: flex;
+
 }
 
-.seccion-text {
-    min-height: 100vh;
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 30px;
+.text{
+    width: 700px;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+.estufa-img{
+    margin-top: 50px;
+    margin-left: 50px;
+    max-width: 300px;
+}
+
+@media(min-width: 800px) {
+    .seccion {
+        padding: 0 4rem;
+    }
+
+    .container-titulo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 
 
-.seccion p {
-    position: absolute;
-    top: 50px;
-    font-size: 1.4rem
-}
-
-.seccion img {}
-
+/* -------pagina CONTACTOS ------- */
 /* Seccion de Contactos */
 
 .contact-info {
@@ -373,6 +378,7 @@ address {
     .contain-contactos {
         padding: 0 4rem;
     }
+
 
     address {
         display: grid;
