@@ -1,0 +1,52 @@
+/* ------Pagina INDEX------- */
+
+
+
+.seccion-intro{
+    max-width: 1200px;
+    display: flex;
+    
+}
+
+.seccion-intro div{
+    margin: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+}
+
+
+.text {
+    max-width: 600px;
+    
+}
+
+.estufa-img{
+    width: 300px;
+}
+
+@media(max-width: 420px){
+    .seccion-intro{
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+
+
+
+        .estufa-img {
+            max-width: 230px;
+        }
+
+        
+        .text{
+            margin: none;
+            padding: none;
+            max-width: 200px;
+        }
+    }
+}

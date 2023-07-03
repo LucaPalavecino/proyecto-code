@@ -8,27 +8,6 @@
     box-sizing: border-box;
 }
 
-h1 {
-    color: red;
-    font-size: 40px;
-
-}
-
-h2 {
-    border-color: black 1px;
-    color: black;
-}
-
-h4 {
-    color: white;
-}
-
-body {
-    background-color: black;
-    color: #fff;
-
-
-}
 
 
 
@@ -42,7 +21,10 @@ header {
     font-size: small;
     width: 100%;
     height: 150px;
-
+    background: #FF0000;
+    background: -moz-radial-gradient(center, #FF0000 0%, #D70000 5%, #000000 100%);
+    background: -webkit-radial-gradient(center, #FF0000 0%, #D70000 5%, #000000 100%);
+    background: radial-gradient(ellipse at center, #FF0000 0%, #D70000 5%, #000000 100%);
 
 }
 
@@ -56,13 +38,10 @@ header {
 .nav {
     display: flex;
     justify-content: space-between;
-    max-width: 1024px;
+    max-width: auto;
     margin: 0 auto;
-    background: #FF0000;
-    background: -moz-radial-gradient(center, #FF0000 0%, #D70000 5%, #000000 100%);
-    background: -webkit-radial-gradient(center, #FF0000 0%, #D70000 5%, #000000 100%);
-    background: radial-gradient(ellipse at center, #FF0000 0%, #D70000 5%, #000000 100%);
-        
+    
+
 
 }
 
@@ -91,9 +70,11 @@ header {
     font-size: 30px;
     padding: 0 20px;
     line-height: 60px;
-
     display: none;
 }
+
+
+/* ------ Menu Hamburquesa ----- */
 
 @media (max-width: 992px) {
 
@@ -150,22 +131,38 @@ header {
     }
 }
 
-
-main {
-    background-color: rgb(0, 0, 0);
+body {
+    background-color: black;
     color: #fff;
 
 
 }
 
-section {
 
-
-    background-color: rgb(0, 0, 0);
+h1 {
+    color: red;
+    font-size: 40px;
+    color: #e60a0a;
 
 }
 
+h4 {
+    color: white;
+}
 
+
+main {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+section {
+    background-color: rgb(0, 0, 0);
+}
+
+ul {
+    font-size: 20px;
+}
 
 a {
     text-decoration: none;
@@ -176,13 +173,7 @@ h1 a {
     color: red;
 }
 
-footer div h2 {
-    color: red;
-    position: absolute;
-    font-size: 30px;
-    margin-left: 50px;
-    margin-top: 60px;
-}
+
 
 nav ul li {
     color: white;
@@ -198,83 +189,162 @@ div h3 {
 
 
 
-/* imagenes */
+
 
 
 
 /* footer */
 footer {
-    margin-top: 300px;
     background-color: black;
     justify-content: center;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     border-color: aliceblue;
+    width: 100%;
+    height: 150px;
+    background: #FF0000;
+    background: -moz-radial-gradient(center, #FF0000 0%, #D70000 5%, #000000 100%);
+    background: -webkit-radial-gradient(center, #FF0000 0%, #D70000 5%, #000000 100%);
+    background: radial-gradient(ellipse at center, #FF0000 0%, #D70000 5%, #000000 100%);
+}
+
+footer div img {
+    margin: 10px;
 }
 
 .red-social {
-    max-width: 100px;
-    color: black;
+    
+    padding: 2rem;
+    
+}
+
+.red-social i {
+    
+    font-size: 25px;
+    color: #fff;
+    margin: 10px;
+    border-radius: 25%;
+    box-shadow: 0px 5px 10px rgb(255, 255, 255);
+    transition: .3s ease;
+}
+
+.fa-youtube:hover{
+    background-color: red;
+    box-shadow: 0 0 15px red,
+                0 0 45px red,
+                0 0 75px red,
+                0 0 100px red;
+}
+
+.fa-tiktok:hover{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    box-shadow: 0 0 15px rgb(255, 255, 255),
+                0 0 45px rgb(255, 255, 255),
+                0 0 75px rgb(255, 255, 255),
+                0 0 100px rgb(255, 255, 255);
+}
+
+.fa-instagram:hover{
+    background-color: rgb(224, 101, 19);
+    color: #ffffff;
+    box-shadow: 0 0 15px rgb(224, 101, 19),
+                0 0 45px rgb(224, 101, 19),
+                0 0 75px rgb(224, 101, 19),
+                0 0 100px rgb(224, 101, 19);
 }
 
 
-
-ul {
-    font-size: 20px;
-}
-
-
-
-
-
-
-/* ---imagen de fondo--- */
+/* ---imagen montaña de fondo--- */
 
 .container-titulo {
-
-    height: 20vh;
-    background-color: #5d5d5d;
-    background-image: url("../imagenes/img.1.0.jpg");
-
-
+    /* background-image: url(../imagenes/img.1.0.jpg); */
+    position: relative;
+    
+    
+    
 }
+.container-titulo img{
+    width: 1900px;
+    height: 150px;
+}
+
+
+.titulo{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-montania{
+    width: 100%;
+    height: 150px;
+}
+
 
 
 
 /* ------Pagina INDEX------- */
 
+
+
 .seccion-intro{
-    width: 700px;
-    height: 300px;
-
+    max-width: 1200px;
     display: flex;
-
+    
 }
 
-.text{
-    width: 700px;
-    height: 500px;
-    margin-top: 50px;
-    margin-left: 60px;
+.seccion-intro div{
+    margin: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+}
+
+
+.text {
+    max-width: 600px;
+    
 }
 
 .estufa-img{
-    margin-top: 50px;
-    margin-left: 50px;
-    max-width: 300px;
+    width: 300px;
 }
 
-@media(min-width: 800px) {
-    .seccion {
-        padding: 0 4rem;
-    }
+@media(max-width: 420px){
+    .seccion-intro{
+        flex-direction: column;
+        flex-wrap: wrap;
+        
 
-    .container-titulo {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+
+
+        .estufa-img {
+            max-width: 230px;
+        }
+
+        
+        .text{
+            margin: none;
+            padding: none;
+            max-width: 200px;
+        }
     }
 }
+
+
+
+
+
+
 
 
 
@@ -389,3 +459,7 @@ address {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+
+
+
