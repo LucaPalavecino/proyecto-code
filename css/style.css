@@ -112,7 +112,7 @@ header {
   display: none;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 790px) {
   header {
     background-color: black;
     color: white;
@@ -156,45 +156,137 @@ header {
     left: 0;
   }
 }
-.section .container-titulo {
-  position: relative;
-}
-.section .container-titulo img {
-  width: 1900px;
+.container-titulo {
+  width: 100%;
   height: 150px;
+  object-fit: cover;
+  position: relative;
+  display: inline-block;
+  text-align: center;
 }
-.section .titulo {
-  color: rgb(0, 0, 0);
+.container-titulo img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.container-titulo .titulo {
+  color: rgba(255, 0, 0, 0.63);
   font-family: Arial, Helvetica, sans-serifgit;
   position: absolute;
+  text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.section .img-montania {
-  width: 100%;
-  height: 150px;
-}
-.section .section-box {
-  padding: 2rem;
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-}
-.section .section-box .box-text .text {
-  font-size: 1.1rem;
-}
-.section .section-box img {
-  max-width: 300px;
+
+/* -------pagina CONTACTOS ------- */
+/* Seccion de Contactos */
+.contain-contactos {
+  font-family: "Mulish", sans-serif;
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0 1.5em;
 }
 
-@media (max-width: 420px) {
-  .section-box {
-    padding: 2rem;
+.contain-contactos > * {
+  padding: 0.5em;
+}
+
+.contact-info {
+  width: 100%;
+  padding: 1em;
+}
+.contact-info .contact-info ul,
+.contact-info li {
+  padding: 1rem;
+  font-size: small;
+}
+
+.maps {
+  width: 100%;
+  max-height: 400px;
+  padding: 1rem;
+  border: 2px solid red;
+}
+
+.contact-info h3 {
+  margin: 0;
+  padding: 1em;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.contain-contactos form {
+  padding-top: 70px;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contain-contactos form .block {
+  grid-column: 1/3;
+}
+
+.contain-contactos form p {
+  margin: 0;
+  padding: 1.5em;
+}
+
+.contain-contactos form button,
+.contain-contactos form input,
+.contain-contactos form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #d63031;
+  color: rgb(255, 255, 255);
+}
+
+.contain-contactos form button {
+  background: #d63031;
+  color: black;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.contain-contactos form button:hover,
+.contain-contactos form button:focus {
+  background: #f44c4c;
+  color: #fff;
+  transition: background-color 0.5s ease-out;
+}
+
+address {
+  min-width: 320px;
+  max-width: 1500px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  box-shadow: 0 0 20px 0 rgb(255, 255, 255);
+}
+
+/*------- Pantalla grande -------*/
+@media (min-width: 768px) {
+  .contain-contactos {
+    padding: 0 4rem;
+  }
+  address {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact-info {
     width: 100%;
-    min-width: 200px;
-    flex-direction: column;
+  }
+  .contact-info .contact-info ul,
+  .contact-info li {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .contact-info h3 {
+    font-size: 2rem;
   }
 }
 /* footer */
@@ -203,13 +295,13 @@ footer {
   border-color: aliceblue;
   width: 100%;
   height: 150px;
-  background: #FF0000;
-  background: -moz-radial-gradient(center, #FF0000 0%, #D70000 5%, #000000 100%);
-  background: -webkit-radial-gradient(center, #FF0000 0%, #D70000 5%, #000000 100%);
-  background: radial-gradient(ellipse at center, #FF0000 0%, #D70000 5%, #000000 100%);
+  background: #000000;
+  background: -moz-linear-gradient(top, #000000 0%, #000000 65%, #FF0000 100%);
+  background: -webkit-linear-gradient(top, #000000 0%, #000000 65%, #FF0000 100%);
+  background: linear-gradient(to bottom, #000000 0%, #000000 65%, #FF0000 100%);
 }
 footer img {
-  margin: 10px;
+  transform: translate(0, -40px);
 }
 
 .box {
@@ -217,7 +309,7 @@ footer img {
   height: 150px;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   width: 100%;
   margin: auto;
 }
@@ -264,6 +356,62 @@ footer img {
   }
   .logo {
     display: none;
+  }
+}
+/* ------Pagina INDEX------- */
+.section {
+  display: grid;
+  place-items: center;
+}
+
+.section-box {
+  padding: 2rem;
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-box .box-text {
+  justify-content: center;
+}
+.section-box .box-text .text {
+  font-size: 1.1rem;
+  padding: 1rem;
+}
+.section-box .estufa-img {
+  max-width: 300px;
+}
+
+@media (min-width: 768px) {
+  .section-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-box .box-text {
+    width: 600px;
+    height: 400px;
+    overflow-y: auto;
+  }
+  .section-box .box-text .text {
+    height: 100%;
+  }
+  .section-box img {
+    max-width: 250px;
+  }
+}
+@media (min-width: 1024px) {
+  .section-box {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-box .box-text {
+    min-width: 1000px;
+    height: 400px;
+  }
+  .section-box img {
+    max-width: 300px;
   }
 }
 

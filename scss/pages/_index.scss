@@ -2,51 +2,100 @@
 
 
 
-.seccion-intro{
-    max-width: 1200px;
-    display: flex;
-    
+// // ---------------------- SECCION DE PARRAFOS E IMAGEN ------------------
+.section{
+    display: grid;
+    place-items: center;
+
 }
 
-.seccion-intro div{
-    margin: 50px;
-    
+.section-box {
+
+    padding: 2rem;
+    max-width: 1500px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     
-    
-    
-    
-}
 
-
-.text {
-    max-width: 600px;
-    
-}
-
-.estufa-img{
-    width: 300px;
-}
-
-@media(max-width: 420px){
-    .seccion-intro{
-        flex-direction: column;
-        flex-wrap: wrap;
+    .box-text {
         
+        justify-content: center;
 
-
-
-        .estufa-img {
-            max-width: 230px;
-        }
-
-        
-        .text{
-            margin: none;
-            padding: none;
-            max-width: 200px;
+        .text {
+            font-size: 1.1rem;
+            padding: 1rem;
+            
         }
     }
+
+            .estufa-img {
+            
+            max-width: 300px;
+        }
+    }
+
+    
+
+
+
+
+
+
+@media(min-width: 768px) {
+    .section-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .box-text {
+            width: 600px;
+            height: 400px;
+            overflow-y: auto;
+            
+
+            .text{
+                height: 100%;
+            }
+        }
+
+        & img {
+            max-width: 250px;
+
+        }
+    }
+
+
+
 }
+
+@media (min-width: 1024px) {
+
+    .section-box {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
+        
+        
+        
+
+        .box-text {
+            min-width: 1000px;
+            height: 400px;
+
+        }
+
+        & img {
+            max-width: 300px;
+
+        }
+    }
+    
+        
+    }
+
+
+
+
+
+
