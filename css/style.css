@@ -141,6 +141,7 @@ header {
     top: 150px;
     width: 100%;
     padding: 20px 0;
+    gap: 1rem;
     height: calc(100% - 150px);
     overflow-y: auto;
   }
@@ -170,7 +171,7 @@ header {
   object-fit: cover;
 }
 .container-titulo .titulo {
-  color: rgba(255, 0, 0, 0.63);
+  color: rgb(0, 0, 0);
   font-family: Arial, Helvetica, sans-serifgit;
   position: absolute;
   text-align: center;
@@ -413,6 +414,16 @@ footer img {
   .section-box img {
     max-width: 300px;
   }
+}
+.instrucciones {
+  padding: 2rem;
+}
+.instrucciones h3 {
+  text-align: center;
+  margin: 1rem;
+}
+.instrucciones img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
