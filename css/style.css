@@ -426,4 +426,54 @@ footer img {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .instrucciones {
+    max-width: 1200px;
+  }
+  .instrucciones h3 {
+    text-align: left;
+    margin: 1rem;
+  }
+  .instrucciones p {
+    max-width: 700px;
+    margin-right: 2rem;
+  }
+  .instrucciones img {
+    width: 240px;
+  }
+  .extraccion {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 80px 1fr;
+  }
+  .extraccion h3 {
+    grid-column: 1/span 3;
+  }
+  .extraccion p {
+    align-items: end;
+  }
+  .encendido {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 80px 1fr;
+  }
+  .encendido h3 {
+    grid-column: 1/span 3;
+  }
+  .encendido p {
+    align-items: end;
+  }
+  .goteo {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 80px 1fr;
+  }
+  .goteo h3 {
+    grid-column: 1/span 3;
+  }
+  .goteo p {
+    align-items: end;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
