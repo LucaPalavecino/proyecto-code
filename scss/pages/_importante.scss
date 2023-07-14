@@ -1,0 +1,21 @@
+.importante{
+    display: grid;
+    place-items: center;
+    max-width: 1200px;
+    padding: 1rem;
+    
+    & h3{
+        text-align: center;
+        margin: 1rem;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    & p{
+        font-size: 1.5rem;
+    }
+
+    & ul{
+        padding: 1rem;
+    }
+}

@@ -13,14 +13,26 @@
         width: 100%;
     }
     
+    & ol{
+        padding: 1rem;
+    }
+
     
 }
 @media screen and (min-width: 768px) {
-
+        
+    main.instrucciones{
+        display: flex;
+        justify-content: center;
+    }
+        
     .instrucciones{
 
         max-width: 1200px;
-
+        border: 2px solid red;
+        
+        
+        
         & h3{
             text-align: left;
             margin: 1rem;
@@ -33,6 +45,7 @@
         img{
             width: 240px;
         }
+        
     }
     .extraccion{
         display: grid;
@@ -61,6 +74,10 @@
         & p{
             align-items: end;
         }
+
+        & img{
+            height: 100%;
+        }
         
     }
 
@@ -74,7 +91,9 @@
         }
 
         & p{
-            align-items: end;
+            
+            
+
         }
         
     }
