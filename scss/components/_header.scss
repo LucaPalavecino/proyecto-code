@@ -37,6 +37,7 @@ header {
     margin-top: 105px;
     width: max-content;
     font-size: 14px;
+    z-index: 10;
 
 }
 
@@ -58,6 +59,7 @@ header {
     padding: 0 20px;
     line-height: 60px;
     display: none;
+    z-index: 100;
 }
 
 @media (max-width: 790px) {
@@ -71,6 +73,7 @@ header {
 
     .nav-toggle {
         display: block;
+        
     }
 
     .nav {
@@ -114,5 +117,6 @@ header {
 
     .nav-list_visible {
         left: 0;
+        z-index: 10;
     }
 }
