@@ -22,6 +22,10 @@ header {
     margin-top: 60px;
 }
 
+.flame{
+    display: none;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -37,14 +41,12 @@ header {
     margin-top: 105px;
     width: max-content;
     font-size: 14px;
-    z-index: 10;
 
 }
 
 .nav-list-link {
     padding: 6px 10px;
     border-radius: 5px;
-
 }
 
 .nav-list-link:hover {
@@ -60,10 +62,9 @@ header {
     padding: 0 20px;
     line-height: 60px;
     display: none;
-    z-index: 10;
 }
 
-@media (max-width: 790px) {
+@media (max-width: 996px) {
 
     header {
         background-color: black;
@@ -74,7 +75,6 @@ header {
 
     .nav-toggle {
         display: block;
-        
     }
 
     .nav {
@@ -119,5 +119,14 @@ header {
     .nav-list_visible {
         left: 0;
         z-index: 10;
+    }
+}
+
+@media (max-width: 420px) {
+    
+    .flame{
+        display: block;
+        max-width: 50px;
+        
     }
 }

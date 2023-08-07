@@ -78,6 +78,10 @@ header {
   margin-top: 60px;
 }
 
+.flame {
+  display: none;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -90,7 +94,6 @@ header {
   margin-top: 105px;
   width: max-content;
   font-size: 14px;
-  z-index: 10;
 }
 
 .nav-list-link {
@@ -111,10 +114,9 @@ header {
   padding: 0 20px;
   line-height: 60px;
   display: none;
-  z-index: 10;
 }
 
-@media (max-width: 790px) {
+@media (max-width: 996px) {
   header {
     background-color: black;
     color: white;
@@ -160,6 +162,12 @@ header {
     z-index: 10;
   }
 }
+@media (max-width: 420px) {
+  .flame {
+    display: block;
+    max-width: 50px;
+  }
+}
 .container-titulo {
   width: 100%;
   height: 150px;
@@ -174,7 +182,7 @@ header {
   object-fit: cover;
 }
 .container-titulo h2 {
-  color: rgba(0, 0, 0, 0);
+  color: rgb(0, 0, 0);
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   position: absolute;
@@ -182,25 +190,6 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.container-titulo h2::before {
-  content: attr(data-text);
-  position: absolute;
-  color: rgba(255, 0, 0, 0.7333333333);
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 4px rgb(255, 0, 0);
-  animation: animate 8s linear infinite;
-  filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.829)) drop-shadow(0 0 20px red);
-}
-@keyframes animate {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100;
-  }
 }
 
 /* -------pagina CONTACTOS ------- */
@@ -336,6 +325,10 @@ footer img {
   align-items: center;
   width: 100%;
   margin: auto;
+}
+
+.logo {
+  margin-left: 1rem;
 }
 
 .box-2 {
